@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link type="text/css" rel="stylesheet" media="all" href="css/main.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>EMail</title>
+<script type="text/javascript"> 
+function sendMail(_frm){ 
+var eml="kershawd@gmail.com"; 
+var bod="&body="+_frm.vname.value+" ¦¦ "+_frm.txtone.value; 
+var subj="?subject=Whatever you want"; 
+document.location="mailto:"+eml+subj+bod; 
+} 
+</script> 
+</head>
+
+<body>
+<table width="200" border="0" align="center">
+  <tr>
+    <td>
+<form action="mailto:you@youraddress.com" enctype="text/plain" 
+method="POST" onsubmit="sendMail(this);return false;">     
+
+Your Name:<br>
+<input type="text" size="30" name="vname"><br>
+
+Your Comment:<br>
+<textarea name="txtone" rows="4" cols="30">
+</textarea><br><br>
+
+<input type="submit" value="Email This Form">
+
+</form>
+</td>
+  </tr>
+</table>
+
+</body>
+</html>
